@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title" class="text-center">FreeCodeCamp Survey Form</h1>
+        <p id="description" class="text-center">Thank you for taking the time to help us improve the platform</p>
+      </header>
+      <section>
+        <form action="" id="survey-form">
+          <div class="form-group">
+            <label for="name" id="name-label">Name</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="enter your name" required>
+          </div>
+          <div class="form-group">
+            <label for="email" id="email-label">Email</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="enter your email id" required>
+          </div>
+          <div class="form-group">
+            <label for="email" id="number-label">Age</label>
+            <input type="number" name="number" id="number" class="form-control" placeholder="enter your number id"
+              min="10" max="99" required>
+          </div>
+          <div class="form-group">
+            <label for="language" id="langauge-label">Select Language</label>
+            <select name="language" id="dropdown" class="form-control">
+              <option value="Kannada">Kannada</option>
+              <option value="Hindi">Hindi</option>
+              <option value="English">English</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <p>Gender</p>
+            <label>
+              <input type="radio" value="male" name="gender" class="input-radio" checked>
+              Male
+            </label>
+            <label>
+              <input type="radio" value="female" name="gender" class="input-radio">
+              Female
+            </label>
+          </div>
+          <div class="form-group">
+            <p>favorite Subjects</p>
+            <label>
+              <input type="checkbox" value="Javascript" class="input-checkbox">
+              Javascript
+            </label>
+            <label>
+              <input type="checkbox" value="Javascript" class="input-checkbox">
+              Java
+            </label>
+            <label>
+              <input type="checkbox" value="Javascript" class="input-checkbox">
+              C#
+            </label>
+          </div>
+          <div class="form-group">
+            <label for="address-label">Address</label>
+            <textarea name="address" id="" cols="30" rows="5" class="input-textarea"></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" id="submit" class="btn">Submit</button>
+          </div>
+        </form>
+      </section>
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+
+</html>
